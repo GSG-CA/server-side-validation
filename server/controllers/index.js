@@ -5,13 +5,13 @@ const Joi = require('@hapi/joi');
 
 const error = require("./error");
 
-router.post("/login", (req, res) => {
+router.post("/signup", (req, res) => {
 
   // Write your code here
 
 });
 
-router.post("/signup", (req, res) => {
+router.post("/login", (req, res) => {
 
   // Write your code here
 
