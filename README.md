@@ -1,6 +1,10 @@
 
 ## Server Side Validation Workshop
 
+Based on Shahenaz Monia [original workshop](https://github.com/shahenazmonia/server-side-validation).
+
+----
+
 
 ![server validation](https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/16441230-f61c-4a68-bd06-9ea32076c12d/validation.png)
 
@@ -18,7 +22,7 @@ Joi allows you to create schemas for JavaScript objects (an object that stores i
 Here is an example for login fields using ```joi``` validation.
 
 ```js
-const Joi = require('joi');
+const Joi = require('@hapi/joi');
 
 const schema = Joi.object().keys({
     username: Joi.string().alphanum().min(3).max(30).required(),
