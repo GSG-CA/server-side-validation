@@ -1,22 +1,17 @@
-"use strict";
+'use strict';
 
-const router = require("express").Router();
-const Joi = require('@hapi/joi');
+const router = require('express').Router();
+const Joi = require('joi');
 
-const error = require("./error");
+const error = require('./error');
 
-router.post("/signup", (req, res) => {
-
+router.post('/signup', (req, res) => {
   // Write your code here
-
 });
 
-router.post("/login", (req, res) => {
-
+router.post('/login', (req, res) => {
   // Write your code here
-
 });
-
 
 router.use(error.client);
 router.use(error.server);
