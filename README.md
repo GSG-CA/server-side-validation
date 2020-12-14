@@ -24,7 +24,7 @@ Check [Joi V15.1.1 API](https://joi.dev/api/?v=15.1.1)
 Here is an example for login fields using ```joi``` validation.
 
 ```js
-const Joi = require('@hapi/joi');
+const Joi = require('joi');
 
 const schema = Joi.object().keys({
     username: Joi.string().alphanum().min(3).max(30).required(),
