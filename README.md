@@ -25,15 +25,14 @@ Here is an example for login fields using `joi` validation.
 ```js
 const Joi = require('joi');
 
-const schema = Joi.object()({
+const schema = Joi.object({
   username: Joi.string().alphanum().min(3).max(30).required(),
   password: Joi.string().min(7).required(),
 });
 
 // Return result.
 const result = schema.validate(
-  { username: 'abc', password: 'sh1121993$$MO' },
-  schema
+  { username: 'abc', password: 'sh1121993$$MO' }
 );
 // result.error === null -> valid
 ```
