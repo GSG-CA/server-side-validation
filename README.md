@@ -19,6 +19,8 @@ This method is secure because it will work even if JavaScript is turned off in t
 #### Joi Tool
 Joi allows you to create schemas for JavaScript objects (an object that stores information) to ensure validation of key information.
 
+Check [Joi V15.1.1 API](https://joi.dev/api/?v=15.1.1)
+
 Here is an example for login fields using ```joi``` validation.
 
 ```js
