@@ -25,6 +25,6 @@ button.addEventListener("click", e => {
     })
   })
     .then(response => response.json())
-    .then(res => console.log(res))
+    .then(res => console.log("response", res))
     .catch(err => console.log(err));
 });
