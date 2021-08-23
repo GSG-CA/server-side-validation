@@ -20,6 +20,6 @@ loginButton.addEventListener("click", e => {
     })
   })
     .then(response => response.json())
-    .then(res => console.log("response", res))
+    .then(res => console.log(res))
     .catch(err => console.log(err))
 });
